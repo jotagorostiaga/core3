@@ -812,9 +812,10 @@ textarea.input { resize: vertical; min-height: 120px; }
    Ajustes móvil (feedback cliente)
    =================================================================== */
 
-/* 1) Instagram: 2 por fila en móvil (estilo referencia) */
+/* 1) Instagram: solo 2 imágenes (una fila) en móvil, estilo referencia */
 @media (max-width: 760px){
   .ig-grid { grid-template-columns: repeat(2, 1fr); }
+  .ig-grid .ig-item:nth-child(n+3) { display: none; }
 }
 
 /* 2) Header móvil estilo Pleto: logo a la izquierda, CTA + hamburguesa a la derecha */
