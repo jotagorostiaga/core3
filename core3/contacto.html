@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto · CORE 3 Studio</title>
+<meta name="description" content="Contacta con CORE 3 Studio en Alcobendas, Madrid. Calle Alegría 5, Local 2 bis. hola@core3studio.es">
+<meta name="theme-color" content="#69705E">
+<link rel="preload" href="assets/fonts/PlayfairDisplay.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ===== Announcement bar (editable desde CMS) ===== -->
+<div class="announce">
+  <div class="wrap-wide">
+    <span class="a-side" aria-hidden="true"></span>
+    <span class="a-main">Apertura 20 de septiembre · Core Founders con 20% en todas las tarifas</span>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="nav wrap-wide">
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="fsmenu">
+      <span class="menu-ico"><span></span><span></span><span></span></span>
+      <span class="menu-txt">Menú</span>
+    </button>
+    <a href="index.html" class="nav-logo logo-mark" aria-label="CORE 3 Studio, inicio">
+      <span class="logo-lockup">
+          <svg class="mark" viewBox="0 0 746.1 699.8" role="img" aria-label="CORE 3">
+            <path class="mc" d="M546,565.4c-41.9,64.2-107.6,100.8-183.8,103.7C8.3,682.5,2.2,13.8,359.7,23.6c76,2.1,131.7,44,174.5,107.4,1.7,2.5,6.2,9.9,11,17.7V60.7c-19-13.6-41.5-26.6-50.2-30.6C436.2,2.6,362.6-3.9,298.6,2,36.4,12.6-70.1,317.1,47.8,533.2c87.4,160.2,298.9,212,437.5,124.2,9.8-6.2,41.4-28.8,60.7-47.6v-44.3Z"/>
+            <circle class="d1" cx="441.5" cy="373.4" r="35.8"/>
+            <circle class="d2" cx="575.9" cy="373.4" r="35.8"/>
+            <circle class="d3" cx="710.3" cy="373.4" r="35.8"/>
+          </svg>
+          <span class="word"><b>CORE</b> <span class="three">3</span></span>
+          <span class="sub">Studio</span>
+        </span>
+    </a>
+    <div class="nav-actions">
+      <a href="https://backoffice.bsport.io/login?membership=[ID_CORE3]" class="btn btn-ghost btn-nav btn-login">Acceso socias</a>
+      <a href="calendario.html" class="btn btn-dark btn-nav">Reserva tu clase</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Full-screen menu ===== -->
+<div class="fsmenu" id="fsmenu" aria-hidden="true">
+  <button class="fsmenu-close" aria-label="Cerrar menú"><span></span><span></span></button>
+  <div class="fsmenu-inner wrap-wide">
+    <nav class="fsmenu-nav" aria-label="Menú principal">
+      <a href="about.html">Sobre nosotros</a>
+      <a href="index.html#disciplinas">Disciplinas</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="core-founders.html">Core Founders</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="fsmenu-aside">
+      <div class="fsmenu-block">
+        <span class="eyebrow">El estudio</span>
+        <p>Calle Alegría 5, Local 2 bis<br>Alcobendas, Madrid</p>
+        <p>Lun a Vie 7:00 - 21:00<br>Sábado 8:00 - 14:00</p>
+      </div>
+      <div class="fsmenu-block">
+        <span class="eyebrow">Conecta</span>
+        <a href="https://backoffice.bsport.io/login?membership=[ID_CORE3]" class="fsmenu-link">Acceso socias</a>
+        <a href="https://instagram.com/core3studio" target="_blank" rel="noopener" class="fsmenu-link">@core3studio</a>
+        <a href="mailto:hola@core3studio.es" class="fsmenu-link">hola@core3studio.es</a>
+      </div>
+      <a href="calendario.html" class="btn btn-amber fsmenu-cta">Reserva tu clase</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow reveal">Contacto</span>
+    <h1 class="reveal d1">Hablemos</h1>
+    <p class="reveal d2">¿Tienes una duda o quieres reservar tu primera sesión? Escríbenos y te respondemos lo antes posible.</p>
+  </div>
+</section>
+
+<section class="section contact-section">
+  <div class="wrap-wide">
+    <div class="contact-card reveal">
+      <div class="contact-form-side">
+        <div class="form-body">
+          <span class="eyebrow">Envíanos un mensaje</span>
+          <h2>Cuéntanos</h2>
+          <form id="contact-form" novalidate>
+            <div class="field" data-required>
+              <label for="c-nombre">Nombre <span class="req">*</span></label>
+              <input class="input" type="text" id="c-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name">
+              <span class="form-error">Escribe tu nombre.</span>
+            </div>
+            <div class="field" data-required>
+              <label for="c-email">Email <span class="req">*</span></label>
+              <input class="input" type="email" id="c-email" name="email" placeholder="tu@email.com" autocomplete="email">
+              <span class="form-error">Escribe un email válido.</span>
+            </div>
+            <div class="field" data-required>
+              <label for="c-msg">Mensaje <span class="req">*</span></label>
+              <textarea class="input" id="c-msg" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+              <span class="form-error">Escribe tu mensaje.</span>
+            </div>
+            <div style="margin-top:24px"><button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button></div>
+          </form>
+        </div>
+        <div class="form-success" id="contact-success">
+          <span class="ok"><svg viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg></span>
+          <h3>Mensaje enviado</h3>
+          <p>Gracias por escribirnos. Te responderemos muy pronto.</p>
+        </div>
+      </div>
+
+      <div class="contact-info-side">
+        <span class="eyebrow">Dónde estamos</span>
+        <ul class="cinfo">
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><h4>Dirección</h4><p>Calle Alegría 5, Local 2 bis<br>(entrada por Paseo de Fuente Lucha)<br>Alcobendas, Madrid</p></div>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><h4>Email</h4><p><a href="mailto:hola@core3studio.es">hola@core3studio.es</a></p></div>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l2 5v2a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+            <div><h4>Teléfono</h4><p><a href="tel:+34655123456">655 123 456</a></p></div>
+          </li>
+          <li>
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><h4>Horario</h4><p>Lunes a viernes: 7:00 - 21:00<br>Sábado: 8:00 - 14:00</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-map reveal">
+      <iframe title="Ubicación de CORE 3 Studio en Alcobendas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Alcobendas%2C%20Madrid&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instagram ===== -->
+<section class="ig-section">
+  <div class="wrap-wide">
+    <div class="ig-head reveal">
+      <div>
+        <span class="eyebrow">Síguenos en Instagram</span>
+        <h3>@core3studio</h3>
+      </div>
+      <a href="https://instagram.com/core3studio" target="_blank" rel="noopener" class="btn btn-ghost ig-follow">Seguir en Instagram</a>
+    </div>
+  </div>
+  <!-- Galería a sangre. Sustituir cada href por el permalink real de cada post de Instagram -->
+  <div class="ig-grid reveal">
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-1.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-2.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-3.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-4.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-5.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-6.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+  </div>
+</section>
+
+</main>
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-mark" aria-label="CORE 3 Studio">
+          <span class="logo-lockup">
+            <svg class="mark" viewBox="0 0 746.1 699.8" aria-hidden="true">
+              <path class="mc" d="M546,565.4c-41.9,64.2-107.6,100.8-183.8,103.7C8.3,682.5,2.2,13.8,359.7,23.6c76,2.1,131.7,44,174.5,107.4,1.7,2.5,6.2,9.9,11,17.7V60.7c-19-13.6-41.5-26.6-50.2-30.6C436.2,2.6,362.6-3.9,298.6,2,36.4,12.6-70.1,317.1,47.8,533.2c87.4,160.2,298.9,212,437.5,124.2,9.8-6.2,41.4-28.8,60.7-47.6v-44.3Z"/>
+              <circle class="d1" cx="441.5" cy="373.4" r="35.8"/><circle class="d2" cx="575.9" cy="373.4" r="35.8"/><circle class="d3" cx="710.3" cy="373.4" r="35.8"/>
+            </svg>
+            <span class="word"><b>CORE</b> <span class="three">3</span></span>
+            <span class="sub">Studio</span>
+          </span>
+        </a>
+        <p>Come back to your core. Estudio boutique de Pilates Reformer, Barre y Yoga en Alcobendas.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/core3studio" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:hola@core3studio.es" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Estudio</h4>
+        <ul>
+          <li><a href="about.html">Sobre nosotros</a></li>
+          <li><a href="index.html#disciplinas">Disciplinas</a></li>
+          <li><a href="calendario.html">Calendario</a></li>
+          <li><a href="core-founders.html">Core Founders</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Escríbenos</h4>
+        <ul>
+          <li><a href="mailto:hola@core3studio.es">hola@core3studio.es</a></li>
+          <li><a href="tel:+34655123456">655 123 456</a></li>
+          <li>Calle Alegría 5, Local 2 bis</li>
+          <li>Alcobendas, Madrid</li>
+          <li>L-V 7:00-21:00 · Sáb 8:00-14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> CORE 3 Studio. Todos los derechos reservados.</span>
+      <span class="fb-links"><a href="#">Términos</a><a href="#">Privacidad</a><a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
