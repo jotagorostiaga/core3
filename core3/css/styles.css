@@ -827,14 +827,27 @@ textarea.input { resize: vertical; min-height: 120px; }
   .menu-txt   { display: none; }
 }
 
-/* 3) Tarifas de bonos: carrusel horizontal deslizable en móvil */
+/* 3) Carrusel SOLO en "Tarifas fundadoras" (Core Founders, #unirme).
+      La home "Elige tu bono" (#bonos) vuelve a tarjetas apiladas. */
 @media (max-width: 760px){
-  .bono-cards { display: flex; grid-template-columns: none; overflow-x: auto; gap: 14px;
+  #unirme .bono-cards { display: flex; grid-template-columns: none; overflow-x: auto; gap: 14px;
     scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
     padding: 4px 4px 12px; margin-inline: -4px; scroll-padding-inline: 4px; }
-  .bono-cards .bono { flex: 0 0 82%; scroll-snap-align: center; }
-  .bono-cards::-webkit-scrollbar { height: 0; }
+  #unirme .bono-cards .bono { flex: 0 0 82%; scroll-snap-align: center; }
+  #unirme .bono-cards::-webkit-scrollbar { height: 0; }
+  #bonos .bono-cards { grid-template-columns: 1fr; }
 }
+
+/* "Acceso socias" con más protagonismo en el menú full-screen (botón) */
+.fsmenu-block .fsmenu-link[href*="bsport"]{
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-top: 12px; padding: 12px 24px;
+  border: 1px solid rgba(251,247,240,.55); border-radius: var(--radius);
+  font-size: 12.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--cream); width: -moz-fit-content; width: fit-content;
+  transition: background-color .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
+}
+.fsmenu-block .fsmenu-link[href*="bsport"]:hover{ background: var(--cream); color: var(--obsidian); border-color: var(--cream); }
 
 /* 4) Puntos de "cupo" con parpadeo suave */
 @keyframes pulseDot {
