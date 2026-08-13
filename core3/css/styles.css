@@ -807,3 +807,41 @@ textarea.input { resize: vertical; min-height: 120px; }
 .gift-inner { text-align: center; }
 .gift-copy { max-width: 52ch; margin-inline: auto; }
 .gift-copy p { margin-inline: auto; }
+
+/* ===================================================================
+   Ajustes móvil (feedback cliente)
+   =================================================================== */
+
+/* 1) Instagram: 2 por fila en móvil (estilo referencia) */
+@media (max-width: 760px){
+  .ig-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 2) Header móvil estilo Pleto: logo a la izquierda, CTA + hamburguesa a la derecha */
+@media (max-width: 760px){
+  .site-header .nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .nav-logo   { order: 1; margin-right: auto; }
+  .nav-actions{ order: 2; gap: 10px; }
+  .menu-btn   { order: 3; }
+  .menu-txt   { display: none; }
+}
+
+/* 3) Tarifas de bonos: carrusel horizontal deslizable en móvil */
+@media (max-width: 760px){
+  .bono-cards { display: flex; grid-template-columns: none; overflow-x: auto; gap: 14px;
+    scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    padding: 4px 4px 12px; margin-inline: -4px; scroll-padding-inline: 4px; }
+  .bono-cards .bono { flex: 0 0 82%; scroll-snap-align: center; }
+  .bono-cards::-webkit-scrollbar { height: 0; }
+}
+
+/* 4) Puntos de "cupo" con parpadeo suave */
+@keyframes pulseDot {
+  0%   { box-shadow: 0 0 0 0 rgba(86,51,19,.5); }
+  70%  { box-shadow: 0 0 0 9px rgba(86,51,19,0); }
+  100% { box-shadow: 0 0 0 0 rgba(86,51,19,0); }
+}
+.cupo-dot, .fb-cup .dot { animation: pulseDot 1.9s ease-out infinite; }
+@media (prefers-reduced-motion: reduce){
+  .cupo-dot, .fb-cup .dot { animation: none; }
+}
