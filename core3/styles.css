@@ -865,10 +865,9 @@ textarea.input { resize: vertical; min-height: 120px; }
 .landing-header .logo-lockup .mark { width: 44px; }
 .landing-page .lead { background: var(--paper); }
 .landing-lead .lead-grid { min-height: min(78vh, 760px); }
-.landing-footer { background: var(--linen); padding: 22px 0; }
-.landing-footer .wrap-wide { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-.landing-footer .lf-copy { font-size: 12.5px; color: var(--ink-mute); }
-.landing-footer .lf-links { display: flex; gap: 22px; font-size: 12.5px; }
+.landing-footer { background: var(--linen); padding: 30px 0; text-align: center; border-top: 1px solid rgba(86,51,19,.1); }
+.landing-footer .wrap-wide { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.landing-footer .lf-links { display: flex; gap: 24px; font-size: 13px; order: -1; }
 .landing-footer .lf-links a { color: var(--ink-soft); transition: color .25s var(--ease); }
 .landing-footer .lf-links a:hover { color: var(--obsidian); }
-@media (max-width: 600px){ .landing-footer .wrap-wide { flex-direction: column; text-align: center; gap: 10px; } }
+.landing-footer .lf-copy { font-size: 12px; color: var(--ink-mute); letter-spacing: .02em; }
