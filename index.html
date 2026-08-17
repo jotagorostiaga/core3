@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CORE 3 Studio · Pilates Reformer, Barre & Yoga en Alcobendas</title>
+<meta name="description" content="CORE 3 Studio, un estudio boutique de Pilates Reformer, Hot Pilates, Barre y Yoga en Alcobendas. Come back to your core. Reserva tu clase y sé de las primeras en enterarte.">
+<meta name="theme-color" content="#69705E">
+<meta property="og:title" content="CORE 3 Studio · Come back to your core">
+<meta property="og:description" content="Estudio boutique de Pilates Reformer, Barre y Yoga en Alcobendas. Apertura 20 de septiembre.">
+<meta property="og:type" content="website">
+<link rel="preload" href="assets/fonts/PlayfairDisplay.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Montserrat.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== Announcement bar (editable desde CMS) ===== -->
+<div class="announce">
+  <div class="wrap-wide">
+    <span class="a-side" aria-hidden="true"></span>
+    <span class="a-main">Apertura 20 de septiembre · Core Founders con 20% en todas las tarifas</span>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="nav wrap-wide">
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="fsmenu">
+      <span class="menu-ico"><span></span><span></span><span></span></span>
+      <span class="menu-txt">Menú</span>
+    </button>
+    <a href="index.html" class="nav-logo logo-mark" aria-label="CORE 3 Studio, inicio">
+      <span class="logo-lockup">
+          <svg class="mark" viewBox="0 0 746.1 699.8" role="img" aria-label="CORE 3">
+            <path class="mc" d="M546,565.4c-41.9,64.2-107.6,100.8-183.8,103.7C8.3,682.5,2.2,13.8,359.7,23.6c76,2.1,131.7,44,174.5,107.4,1.7,2.5,6.2,9.9,11,17.7V60.7c-19-13.6-41.5-26.6-50.2-30.6C436.2,2.6,362.6-3.9,298.6,2,36.4,12.6-70.1,317.1,47.8,533.2c87.4,160.2,298.9,212,437.5,124.2,9.8-6.2,41.4-28.8,60.7-47.6v-44.3Z"/>
+            <circle class="d1" cx="441.5" cy="373.4" r="35.8"/>
+            <circle class="d2" cx="575.9" cy="373.4" r="35.8"/>
+            <circle class="d3" cx="710.3" cy="373.4" r="35.8"/>
+          </svg>
+          <span class="word"><b>CORE</b> <span class="three">3</span></span>
+          <span class="sub">Studio</span>
+        </span>
+    </a>
+    <div class="nav-actions">
+      <a href="https://backoffice.bsport.io/login?membership=[ID_CORE3]" class="btn btn-ghost btn-nav btn-login">Acceso socias</a>
+      <a href="calendario.html" class="btn btn-dark btn-nav">Reserva tu clase</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Full-screen menu ===== -->
+<div class="fsmenu" id="fsmenu" aria-hidden="true">
+  <button class="fsmenu-close" aria-label="Cerrar menú"><span></span><span></span></button>
+  <div class="fsmenu-inner wrap-wide">
+    <nav class="fsmenu-nav" aria-label="Menú principal">
+      <a href="about.html">Sobre nosotros</a>
+      <a href="index.html#disciplinas">Disciplinas</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="core-founders.html">Core Founders</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="fsmenu-aside">
+      <div class="fsmenu-block">
+        <span class="eyebrow">El estudio</span>
+        <p>Calle Alegría 5, Local 2 bis<br>Alcobendas, Madrid</p>
+        <p>Lun a Vie 7:00 - 21:00<br>Sábado 8:00 - 14:00</p>
+      </div>
+      <div class="fsmenu-block">
+        <span class="eyebrow">Conecta</span>
+        <a href="https://backoffice.bsport.io/login?membership=[ID_CORE3]" class="fsmenu-link">Acceso socias</a>
+        <a href="https://instagram.com/core3studio" target="_blank" rel="noopener" class="fsmenu-link">@core3studio</a>
+        <a href="mailto:hola@core3studio.es" class="fsmenu-link">hola@core3studio.es</a>
+      </div>
+      <a href="calendario.html" class="btn btn-amber fsmenu-cta">Reserva tu clase</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section class="hero hero-media-full">
+  <img class="hero-bg" src="assets/img/hero-studio.jpg" alt="Sala de Pilates Reformer de CORE 3 Studio con luz cálida" fetchpriority="high">
+  <span class="hero-scrim"></span>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal">Pilates Reformer, Barre &amp; Yoga Studio</span>
+    <h1 class="reveal d1">Come back to your <span class="accent">core.</span></h1>
+    <div class="rule reveal d1"></div>
+    <p class="lede reveal d2">Donde el bienestar encuentra equilibrio. Tu momento, tu ritmo y tu espacio para conectar con lo que realmente importa: tu centro.</p>
+    <div class="hero-actions reveal d3">
+      <a href="calendario.html" class="btn btn-primary">Reserva tu clase</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Values strip ===== -->
+<section class="values">
+  <div class="wrap-wide">
+    <div class="values-grid">
+      <div class="value reveal">
+        <span class="v-ic"><svg viewBox="0 0 24 24"><path d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-4 3-5 5-8Z"/><path d="M12 11v10"/></svg></span>
+        <div><h3>Mind. Body. Lifestyle.</h3><p>Tres planos que trabajan en sincronía para un bienestar real y sostenido.</p></div>
+      </div>
+      <div class="value reveal d1">
+        <span class="v-ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M4 20c0-3 2.2-5 5-5s5 2 5 5M14.5 20c0-2.2 1.4-3.8 3.5-3.8s3.5 1.4 3.5 3.5"/></svg></span>
+        <div><h3>Comunidad</h3><p>Mucho más que clases. Un espacio para pertenecer y crecer acompañada.</p></div>
+      </div>
+      <div class="value reveal d2">
+        <span class="v-ic"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg></span>
+        <div><h3>Experiencia boutique</h3><p>Atención personalizada en un entorno cálido, sereno y sofisticado.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Disciplinas ===== -->
+<section class="section disciplines" id="disciplinas">
+  <div class="wrap-wide">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nuestras disciplinas</span>
+      <h2 class="section-title">Cada práctica, un camino hacia tu centro</h2>
+    </div>
+
+    <div class="disc-grid">
+      <!-- Pilates Reformer -->
+      <article class="disc reveal">
+        <div class="disc-media"><img src="assets/img/disc-reformer.jpg" alt="Mujer entrenando en máquina reformer" loading="lazy"></div>
+        <div class="disc-body">
+          <h3>Pilates Reformer</h3>
+          <p>Fuerza, control y precisión con máquina.</p>
+          <button class="disc-toggle" aria-expanded="false">Descubrir
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="disc-panel"><div class="disc-panel-inner">
+            <ul>
+              <li><span>Reformer Flow</span><span>Todos los niveles</span></li>
+              <li><span>Reformer Fuerza</span><span>Intermedio</span></li>
+              <li><span>Reformer Restaurativo</span><span>Suave</span></li>
+            </ul>
+            <p class="note">Tipos de clase provisionales. Se cerrarán con el equipo antes de abrir.</p>
+          </div></div>
+        </div>
+      </article>
+      <!-- Hot Pilates -->
+      <article class="disc reveal d1">
+        <div class="disc-media"><img src="assets/img/disc-hotpilates.jpg" alt="Mujer practicando Hot Pilates" loading="lazy"></div>
+        <div class="disc-body">
+          <h3>Hot Pilates</h3>
+          <p>Intensidad y equilibrio en un ambiente cálido.</p>
+          <button class="disc-toggle" aria-expanded="false">Descubrir
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="disc-panel"><div class="disc-panel-inner">
+            <ul>
+              <li><span>Hot Sculpt</span><span>Intermedio</span></li>
+              <li><span>Hot Core</span><span>Todos los niveles</span></li>
+              <li><span>Hot Flow</span><span>Avanzado</span></li>
+            </ul>
+            <p class="note">Tipos de clase provisionales. Se cerrarán con el equipo antes de abrir.</p>
+          </div></div>
+        </div>
+      </article>
+      <!-- Barre -->
+      <article class="disc reveal d2">
+        <div class="disc-media"><img src="assets/img/disc-barre.jpg" alt="Mujer en la barra practicando Barre" loading="lazy"></div>
+        <div class="disc-body">
+          <h3>Barre</h3>
+          <p>Tonifica, alarga y fortalece con precisión técnica.</p>
+          <button class="disc-toggle" aria-expanded="false">Descubrir
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="disc-panel"><div class="disc-panel-inner">
+            <ul>
+              <li><span>Barre Classic</span><span>Todos los niveles</span></li>
+              <li><span>Barre Sculpt</span><span>Intermedio</span></li>
+              <li><span>Barre Stretch</span><span>Suave</span></li>
+            </ul>
+            <p class="note">Tipos de clase provisionales. Se cerrarán con el equipo antes de abrir.</p>
+          </div></div>
+        </div>
+      </article>
+      <!-- Yoga -->
+      <article class="disc reveal d3">
+        <div class="disc-media"><img src="assets/img/disc-yoga.jpg" alt="Mujer practicando Yoga en postura del perro" loading="lazy"></div>
+        <div class="disc-body">
+          <h3>Yoga</h3>
+          <p>Respiración, flexibilidad y conexión cuerpo-mente.</p>
+          <button class="disc-toggle" aria-expanded="false">Descubrir
+            <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="disc-panel"><div class="disc-panel-inner">
+            <ul>
+              <li><span>Vinyasa Flow</span><span>Todos los niveles</span></li>
+              <li><span>Yoga Restaurativo</span><span>Suave</span></li>
+              <li><span>Power Yoga</span><span>Avanzado</span></li>
+            </ul>
+            <p class="note">Tipos de clase provisionales. Se cerrarán con el equipo antes de abrir.</p>
+          </div></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="disc-more">
+      <a href="calendario.html" class="btn btn-ghost">Ver todas las clases</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Bonos ===== -->
+<section class="section bonos" id="bonos">
+  <div class="wrap-wide">
+    <div class="bonos-grid">
+      <div class="bonos-intro reveal">
+        <span class="eyebrow">Elige tu bono</span>
+        <h2>Elige tu forma de entrenar</h2>
+        <p>Todos los bonos incluyen acceso a Pilates Reformer y Sala Multifuncional.</p>
+        <a href="#comparativa" class="link-underline">Ver comparativa
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div>
+        <div class="bono-cards">
+          <div class="bono featured reveal">
+            <div class="tier">Ilimitado</div>
+            <div class="price">212 €</div><div class="per">/ mes</div>
+            <a href="calendario.html" class="btn btn-dark btn-block">Añadir</a>
+          </div>
+          <div class="bono reveal d1">
+            <div class="tier">12 clases / mes</div>
+            <div class="price">180 €</div><div class="per">/ mes</div>
+            <a href="calendario.html" class="btn btn-ghost-light btn-block">Añadir</a>
+          </div>
+          <div class="bono reveal d2">
+            <div class="tier">8 clases / mes</div>
+            <div class="price">140 €</div><div class="per">/ mes</div>
+            <a href="calendario.html" class="btn btn-ghost-light btn-block">Añadir</a>
+          </div>
+          <div class="bono reveal d3">
+            <div class="tier">4 clases / mes</div>
+            <div class="price">80 €</div><div class="per">/ mes</div>
+            <a href="calendario.html" class="btn btn-ghost-light btn-block">Añadir</a>
+          </div>
+        </div>
+        <p class="bono-foot">Compra segura a través de bsport. Consulta condiciones en el carrito.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Comparativa de bonos ===== -->
+<section class="section comparativa" id="comparativa">
+  <div class="wrap-wide">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Comparativa</span>
+      <h2 class="section-title">Encuentra tu bono</h2>
+    </div>
+    <div class="table-scroll reveal">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th class="rowlabel"><span class="th-note">Elige según tu ritmo</span></th>
+            <th class="feat"><span class="plan">Ilimitado</span><span class="plan-price">212 € <small>/mes</small></span></th>
+            <th><span class="plan">12 clases</span><span class="plan-price">180 € <small>/mes</small></span></th>
+            <th><span class="plan">8 clases</span><span class="plan-price">140 € <small>/mes</small></span></th>
+            <th><span class="plan">4 clases</span><span class="plan-price">80 € <small>/mes</small></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Clases al mes</th>
+            <td class="feat"><strong>Ilimitadas</strong></td><td>12</td><td>8</td><td>4</td>
+          </tr>
+          <tr>
+            <th scope="row">Precio por clase <span class="hint">aprox.</span></th>
+            <td class="feat"><strong>Máximo valor</strong></td><td>15 €</td><td>17,50 €</td><td>20 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Pilates Reformer</th>
+            <td class="feat"><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Sala Multifuncional</th>
+            <td class="feat"><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Barre, Hot Pilates y Yoga</th>
+            <td class="feat"><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Reserva online 24/7</th>
+            <td class="feat"><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">Cancelación flexible</th>
+            <td class="feat"><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td><td><span class="yes"></span></td>
+          </tr>
+          <tr class="cta-row">
+            <th scope="row"></th>
+            <td class="feat"><a href="calendario.html" class="btn btn-dark btn-block">Añadir</a></td>
+            <td><a href="calendario.html" class="btn btn-ghost btn-block">Añadir</a></td>
+            <td><a href="calendario.html" class="btn btn-ghost btn-block">Añadir</a></td>
+            <td><a href="calendario.html" class="btn btn-ghost btn-block">Añadir</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Versión en tarjetas para móvil (sin scroll lateral) -->
+    <div class="compare-cards reveal">
+      <div class="pcard featured">
+        <div class="pcard-top"><span class="tier">Ilimitado</span><span class="pcard-price">212 € <small>/mes</small></span></div>
+        <ul class="pcard-feats">
+          <li><span>Clases al mes</span><strong>Ilimitadas</strong></li>
+          <li><span>Precio por clase</span><strong>Máximo valor</strong></li>
+          <li><span>Pilates Reformer</span><span class="yes"></span></li>
+          <li><span>Sala Multifuncional</span><span class="yes"></span></li>
+          <li><span>Barre, Hot Pilates y Yoga</span><span class="yes"></span></li>
+          <li><span>Reserva online 24/7</span><span class="yes"></span></li>
+          <li><span>Cancelación flexible</span><span class="yes"></span></li>
+        </ul>
+        <a href="calendario.html" class="btn btn-dark btn-block">Añadir</a>
+      </div>
+      <div class="pcard">
+        <div class="pcard-top"><span class="tier">12 clases</span><span class="pcard-price">180 € <small>/mes</small></span></div>
+        <ul class="pcard-feats">
+          <li><span>Clases al mes</span><strong>12</strong></li>
+          <li><span>Precio por clase</span><strong>15 €</strong></li>
+          <li><span>Pilates Reformer</span><span class="yes"></span></li>
+          <li><span>Sala Multifuncional</span><span class="yes"></span></li>
+          <li><span>Barre, Hot Pilates y Yoga</span><span class="yes"></span></li>
+          <li><span>Reserva online 24/7</span><span class="yes"></span></li>
+          <li><span>Cancelación flexible</span><span class="yes"></span></li>
+        </ul>
+        <a href="calendario.html" class="btn btn-ghost btn-block">Añadir</a>
+      </div>
+      <div class="pcard">
+        <div class="pcard-top"><span class="tier">8 clases</span><span class="pcard-price">140 € <small>/mes</small></span></div>
+        <ul class="pcard-feats">
+          <li><span>Clases al mes</span><strong>8</strong></li>
+          <li><span>Precio por clase</span><strong>17,50 €</strong></li>
+          <li><span>Pilates Reformer</span><span class="yes"></span></li>
+          <li><span>Sala Multifuncional</span><span class="yes"></span></li>
+          <li><span>Barre, Hot Pilates y Yoga</span><span class="yes"></span></li>
+          <li><span>Reserva online 24/7</span><span class="yes"></span></li>
+          <li><span>Cancelación flexible</span><span class="yes"></span></li>
+        </ul>
+        <a href="calendario.html" class="btn btn-ghost btn-block">Añadir</a>
+      </div>
+      <div class="pcard">
+        <div class="pcard-top"><span class="tier">4 clases</span><span class="pcard-price">80 € <small>/mes</small></span></div>
+        <ul class="pcard-feats">
+          <li><span>Clases al mes</span><strong>4</strong></li>
+          <li><span>Precio por clase</span><strong>20 €</strong></li>
+          <li><span>Pilates Reformer</span><span class="yes"></span></li>
+          <li><span>Sala Multifuncional</span><span class="yes"></span></li>
+          <li><span>Barre, Hot Pilates y Yoga</span><span class="yes"></span></li>
+          <li><span>Reserva online 24/7</span><span class="yes"></span></li>
+          <li><span>Cancelación flexible</span><span class="yes"></span></li>
+        </ul>
+        <a href="calendario.html" class="btn btn-ghost btn-block">Añadir</a>
+      </div>
+    </div>
+
+    <p class="compare-foot reveal">El precio por clase es orientativo, calculado sobre el máximo de clases de cada bono. Todos los bonos incluyen acceso completo a las cuatro disciplinas. ¿Fundadora? Aplica un 20% sobre estas tarifas para siempre.</p>
+  </div>
+</section>
+
+<!-- ===== Core Founders banner ===== -->
+<section class="section-sm founders-banner">
+  <div class="wrap-wide">
+    <div class="fb-inner reveal">
+      <div class="fb-media">
+        <svg class="watermark logo-mark" viewBox="0 0 746.1 699.8" aria-hidden="true" style="--o:1">
+          <path class="mc" style="fill:#fbf7f0" d="M546,565.4c-41.9,64.2-107.6,100.8-183.8,103.7C8.3,682.5,2.2,13.8,359.7,23.6c76,2.1,131.7,44,174.5,107.4,1.7,2.5,6.2,9.9,11,17.7V60.7c-19-13.6-41.5-26.6-50.2-30.6C436.2,2.6,362.6-3.9,298.6,2,36.4,12.6-70.1,317.1,47.8,533.2c87.4,160.2,298.9,212,437.5,124.2,9.8-6.2,41.4-28.8,60.7-47.6v-44.3Z"/>
+          <circle style="fill:#fbf7f0" cx="441.5" cy="373.4" r="35.8"/><circle style="fill:#69705e" cx="575.9" cy="373.4" r="35.8"/><circle style="fill:#ba8d56" cx="710.3" cy="373.4" r="35.8"/>
+        </svg>
+        <img src="assets/img/founders.jpg" alt="Socia fundadora de CORE 3 Studio" loading="lazy">
+      </div>
+      <div class="fb-copy">
+        <span class="eyebrow">Core Founders</span>
+        <h2>Los primeros 50 lugares</h2>
+        <p>Antes de abrir, buscamos a las primeras 50 personas que construyan esto con nosotras. 20% de descuento en todas las tarifas, para siempre. Plazas limitadas, reales.</p>
+        <span class="fb-cup"><span class="dot"></span>Cupo real: 50 plazas</span>
+        <div class="actions">
+          <a href="core-founders.html" class="btn btn-primary">Quiero mi descuento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Regalo (banda inmersiva) ===== -->
+<section class="gift-band">
+  <img class="gift-bg" src="assets/img/about-serene.jpg" alt="Momento de calma en CORE 3 Studio" loading="lazy">
+  <div class="gift-scrim"></div>
+  <div class="wrap-wide gift-inner">
+    <div class="gift-copy reveal">
+      <span class="eyebrow">Tarjetas regalo</span>
+      <h2>Regala bienestar</h2>
+      <p>Un bono Core 3 es mucho más que una clase. Es una invitación a volver al centro. Elige el importe, personaliza tu mensaje y envíala al instante.</p>
+      <a href="calendario.html" class="btn btn-amber">Comprar tarjeta regalo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Filosofía + pilares ===== -->
+<section class="section pillars">
+  <div class="wrap-wide">
+    <div class="philosophy-intro reveal">
+      <span class="eyebrow">Nuestra filosofía</span>
+      <h2 class="section-title">Mucho más que un estudio</h2>
+      <p class="lede">En CORE 3 Studio creamos mucho más que un espacio para practicar pilates, barre o yoga. Creamos un lugar donde cada sesión invita a volver al centro, conectando mente, cuerpo y estilo de vida en una misma experiencia.</p>
+      <a href="about.html" class="link-underline" style="color:var(--nut)">Descubre más
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="feature-row reveal">
+      <div class="feature-item"><h4>Bienestar integral</h4><p>Cuerpo y mente trabajan juntos en cada sesión.</p></div>
+      <div class="feature-item"><h4>Movimiento con propósito</h4><p>Cada clase, con una intención clara.</p></div>
+      <div class="feature-item"><h4>Comunidad</h4><p>Un espacio para pertenecer y crecer.</p></div>
+      <div class="feature-item"><h4>Calidad y cuidado</h4><p>Atención cercana y personalizada.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instagram ===== -->
+<section class="ig-section">
+  <div class="wrap-wide">
+    <div class="ig-head reveal">
+      <div>
+        <span class="eyebrow">Síguenos en Instagram</span>
+        <h3>@core3studio</h3>
+      </div>
+      <a href="https://instagram.com/core3studio" target="_blank" rel="noopener" class="btn btn-ghost ig-follow">Seguir en Instagram</a>
+    </div>
+  </div>
+  <!-- Galería a sangre. Sustituir cada href por el permalink real de cada post de Instagram -->
+  <div class="ig-grid reveal">
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-1.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-2.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-3.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-4.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-5.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+    <a class="ig-item" href="https://www.instagram.com/core3studio/" target="_blank" rel="noopener" aria-label="Ver esta publicación en Instagram">
+      <img src="assets/img/gal-6.jpg" alt="Publicación de CORE 3 Studio en Instagram" loading="lazy">
+      <span class="ig-ov"><svg class="ig-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-mark" aria-label="CORE 3 Studio">
+          <span class="logo-lockup">
+            <svg class="mark" viewBox="0 0 746.1 699.8" aria-hidden="true">
+              <path class="mc" d="M546,565.4c-41.9,64.2-107.6,100.8-183.8,103.7C8.3,682.5,2.2,13.8,359.7,23.6c76,2.1,131.7,44,174.5,107.4,1.7,2.5,6.2,9.9,11,17.7V60.7c-19-13.6-41.5-26.6-50.2-30.6C436.2,2.6,362.6-3.9,298.6,2,36.4,12.6-70.1,317.1,47.8,533.2c87.4,160.2,298.9,212,437.5,124.2,9.8-6.2,41.4-28.8,60.7-47.6v-44.3Z"/>
+              <circle class="d1" cx="441.5" cy="373.4" r="35.8"/><circle class="d2" cx="575.9" cy="373.4" r="35.8"/><circle class="d3" cx="710.3" cy="373.4" r="35.8"/>
+            </svg>
+            <span class="word"><b>CORE</b> <span class="three">3</span></span>
+            <span class="sub">Studio</span>
+          </span>
+        </a>
+        <p>Come back to your core. Estudio boutique de Pilates Reformer, Barre y Yoga en Alcobendas.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/core3studio" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="mailto:hola@core3studio.es" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Estudio</h4>
+        <ul>
+          <li><a href="about.html">Sobre nosotros</a></li>
+          <li><a href="index.html#disciplinas">Disciplinas</a></li>
+          <li><a href="calendario.html">Calendario</a></li>
+          <li><a href="core-founders.html">Core Founders</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Escríbenos</h4>
+        <ul>
+          <li><a href="mailto:hola@core3studio.es">hola@core3studio.es</a></li>
+          <li><a href="tel:+34655123456">655 123 456</a></li>
+          <li>Calle Alegría 5, Local 2 bis</li>
+          <li>Alcobendas, Madrid</li>
+          <li>L-V 7:00-21:00 · Sáb 8:00-14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> CORE 3 Studio. Todos los derechos reservados.</span>
+      <span class="fb-links"><a href="#">Términos</a><a href="#">Privacidad</a><a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
