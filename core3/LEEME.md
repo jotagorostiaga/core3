@@ -1,55 +1,38 @@
-# CORE 3 Studio - Sitio web
+# CORE 3 Studio · Sitio web
 
-Sitio estático (HTML + CSS + JavaScript vanilla), sin dependencias ni build. Se abre directamente en el navegador y se puede subir a cualquier hosting o integrar en un CMS.
+Sitio estático (HTML + CSS + JS, sin build). Todo listo para subir tal cual.
 
 ## Estructura
 
 ```
-/
-├── index.html            Home (todas las secciones del brief)
-├── calendario.html       Calendario + filtros + hueco del widget bsport
-├── core-founders.html    Página propia de Core Founders (permanente)
-├── about.html            Sobre nosotros / filosofía
-├── contacto.html         Formulario + datos + mapa
-├── css/styles.css        Sistema de diseño completo (colores, tipografía, componentes)
-├── js/main.js            Interacciones (scroll reveal, acordeones, menú, validación)
+core3/
+├── index.html            Home
+├── about.html            Sobre nosotras
+├── calendario.html       Calendario / reservas (bsport)
+├── core-founders.html    Core Founders
+├── contacto.html         Contacto
+├── landing.html          Landing de captación (Fase 1)
+├── css/styles.css        Estilos (todo el sistema de diseño)
+├── js/main.js            Interacciones (menú, formularios, scroll)
 └── assets/
-    ├── fonts/            Playfair Display + Montserrat (woff2 variable, self-hosted)
-    ├── img/              Fotografías optimizadas
-    └── logos/            Logos SVG originales de marca
+    ├── favicon.svg / favicon-32.png / favicon.ico / apple-touch-icon.png
+    ├── fonts/            Playfair Display + Montserrat (woff2)
+    ├── img/              Imágenes
+    └── logos/            Logotipos (SVG)
 ```
 
-## Marca aplicada
+## Cómo subirlo a GitHub Pages (reemplazo completo)
 
-- **Tipografías:** Playfair Display (títulos) + Montserrat (cuerpo), auto-alojadas en `assets/fonts` (no dependen de Google Fonts).
-- **Colores** (en `css/styles.css`, bloque `:root`):
-  Lino Puro `#E3D6C6`, Bosque Botánico `#69705E`, Ámbar Silvestre `#BA8D56`, Bruma Mineral `#A3A384`, Nuez Robusta `#563313`, Negro Obsidiana `#121212`.
-- **Logo:** la marca "C···" se construye con SVG inline y cambia de color según el fondo. Los SVG originales están en `assets/logos`.
+1. Entra en el repo `jotagorostiaga/core3` en GitHub.
+2. Abre la carpeta **core3** dentro del repo (donde ya está la web).
+3. Arrastra **todos** los archivos y carpetas de aquí dentro (index.html, about.html, css/, js/, assets/, etc.) y confirma el reemplazo.
+4. Commit. En 1–2 min queda publicado.
+5. Abre la web en incógnito o con **Cmd + Shift + R** para saltarte la caché del navegador.
 
-## Puntos de integración con bsport (pendientes del estudio)
+> Importante: sube el contenido **de la carpeta**, no la carpeta entera, para no crear otro nivel `core3/core3/`.
 
-Todo lo de bsport está montado como *placeholder* claro, listo para conectar. Busca en el código:
+## Pendientes de integración (marcados en el código)
 
-1. **Login / Acceso socias** (en el header de todas las páginas):
-   `https://backoffice.bsport.io/login?membership=[ID_CORE3]`
-   Sustituir `[ID_CORE3]` por el membership ID real.
-2. **Widget de calendario / reservas** (`calendario.html`): bloque `.widget-embed`. Pegar ahí el embed de bsport.
-3. **Bonos y tarjetas regalo** (`index.html`, botones "Añadir" / "Comprar"): hoy apuntan a `calendario.html`. Conectar al carrito/widget de bonos de bsport.
-
-## Formulario de captación de leads (prioridad del brief)
-
-En `index.html`, sección "Sé de las primeras en enterarte":
-- Bloque obligatorio (nombre + email) + bloque opcional progresivo (disciplinas, franjas, frecuencia, días, código postal) + checkbox Core Founders.
-- Ahora mismo valida en cliente y muestra confirmación. **Falta conectar el envío** a Google Sheets / Airtable / CRM.
-  Punto de integración marcado en `js/main.js` con el comentario `integration point`. Ahí se hace el `POST` con los datos del formulario.
-- El formulario de `contacto.html` funciona igual (validación cliente, pendiente el envío real).
-
-## Contenido editable
-
-Textos, precios, imágenes y el banner de aviso superior están en el HTML, pensados para pasarse a campos de CMS. Los tipos de clase dentro de cada disciplina y en Core Founders están como *placeholder* señalado, para cerrarlos con el equipo.
-
-## Notas
-
-- Responsive mobile-first, con menú hamburguesa en móvil.
-- Animaciones suaves (fade-in al hacer scroll, hover, smooth scroll, acordeones) que respetan `prefers-reduced-motion`.
-- El mapa de `contacto.html` usa un embed de Google Maps con la búsqueda de Alcobendas; se puede afinar a la dirección exacta cuando esté confirmada.
+- **Formulario de captación** (`landing.html` + `js/main.js`): conectar a Google Sheets / CRM.
+- **bsport** (`calendario.html`, bonos, reservas): reemplazar los placeholders por los widgets reales.
+- **Instagram**: el bloque usa imágenes fijas; se puede conectar un widget (Behold / Elfsight) para que se actualice solo.
